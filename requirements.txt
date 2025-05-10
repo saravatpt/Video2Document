@@ -1,0 +1,9 @@
+# Project dependencies
+torch>=2.0.0
+transformers>=4.30.0
+ffmpeg-python>=0.2.0
+whisper>=1.1.10
+moviepy>=1.0.3
+markdown>=3.4.3
+numpy>=1.24.0
+opencv-python>=4.7.0

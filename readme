@@ -1,0 +1,40 @@
+# Video2Doc
+
+This project aims to convert video content into documentation.
+
+## Getting Started
+
+## Prerequisites
+- Python 3.8 or higher
+- FFmpeg installed on your system
+- CUDA-compatible GPU (optional, for faster processing)
+
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/Video2Doc.git
+cd Video2Doc
+```
+
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## Features
+- Video transcription using state-of-the-art speech recognition
+- Automatic section detection and formatting
+- Support for multiple video formats
+- Markdown output with proper formatting
+- Code block detection and syntax highlighting
+
+## Usage
+```python
+from video2doc import VideoConverter
+
+converter = VideoConverter("input_video.mp4")
+converter.generate_doc("output.md")
+```
+
+## License
+MIT License
