@@ -1,0 +1,2 @@
+python videotodoc.py
+pause
