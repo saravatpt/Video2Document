@@ -1,2 +1,2 @@
-python videotodoc.py
+'c:\Saravanan\code-practise\AI-ML\Video2Doc\.venv\Scripts\python.exe' 'c:\Users\ramya.chandrasekaran\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\libs\debugpy\launcher' '54224' '--' 'c:\Saravanan\code-practise\AI-ML\Video2Doc\videotodoc.py'
 pause

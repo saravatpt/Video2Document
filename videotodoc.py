@@ -8,24 +8,24 @@ from dotenv import load_dotenv
 load_dotenv()
 video_path=os.getenv('video_path')
 def transcribe_video_with_progress(video_path, model_size="base"):
-    # model = whisper.load_model(model_size)
-    # print(f"🔍 Transcribing {video_path} using Whisper {model_size} model...\n")
+    model = whisper.load_model(model_size)
+    print(f"🔍 Transcribing {video_path} using Whisper {model_size} model...\n")
 
-    # result = model.transcribe(video_path, verbose=False)
+    result = model.transcribe(video_path, verbose=False)
 
-    # segments = result["segments"]
-    # total_segments = len(segments)
+    segments = result["segments"]
+    total_segments = len(segments)
 
-    # with open("transcript.txt", "w", encoding="utf-8") as f:
-    #     f.write(f"Transcript of {video_path}\n\n")
+    with open("transcript.txt", "w", encoding="utf-8") as f:
+        f.write(f"Transcript of {video_path}\n\n")
 
-    #     for segment in tqdm(segments, desc="📝 Writing transcript", unit="segments"):
-    #         start = segment["start"]
-    #         end = segment["end"]
-    #         text = segment["text"].strip()
-    #         f.write(f"[{start:.2f} --> {end:.2f}] {text}\n")
+        for segment in tqdm(segments, desc="📝 Writing transcript", unit="segments"):
+            start = segment["start"]
+            end = segment["end"]
+            text = segment["text"].strip()
+            f.write(f"[{start:.2f} --> {end:.2f}] {text}\n")
 
-    # print("\n✅ Done! Transcript saved to transcript.txt")
+    print("\n✅ Done! Transcript saved to transcript.txt")
 
     # Read the transcript
     transcript_content = ""
